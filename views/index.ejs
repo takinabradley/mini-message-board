@@ -6,7 +6,9 @@
   <body>
     <div class="messages">
       <% messages.forEach(message => { %>
-        <%- `<p>${JSON.stringify(message)}</p>` %>
+        <p>
+          <%= JSON.stringify(message) %>
+        </p>
       <% })                            %>
     </div>
 
